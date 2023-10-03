@@ -64,7 +64,6 @@ public class AppActivity extends AppCompatActivity {
                 .build()
                 .create(TypicodeService.class);
 
-        init();
 
     }
     public void fetchWebServiceData(){
