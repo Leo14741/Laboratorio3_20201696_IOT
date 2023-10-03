@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/magnetometro">
+
+    <fragment
+        android:id="@+id/magnetometro"
+        android:name="com.example.laboratorio3_20201696.fragmentos.Magnetometro"
+        android:label="fragment_magnetometro"
+        tools:layout="@layout/fragment_magnetometro" >
+        <action
+            android:id="@+id/action_magnetometro_to_acelerometro"
+            app:destination="@id/acelerometro" />
+    </fragment>
+    <fragment
+        android:id="@+id/acelerometro"
+        android:name="com.example.laboratorio3_20201696.fragmentos.Acelerometro"
+        android:label="fragment_acelerometro"
+        tools:layout="@layout/fragment_acelerometro" >
+        <action
+            android:id="@+id/action_acelerometro_to_magnetometro"
+            app:destination="@id/magnetometro"
+            app:popUpTo="@id/magnetometro"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
