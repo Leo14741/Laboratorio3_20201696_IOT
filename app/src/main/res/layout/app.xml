@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
@@ -10,17 +11,45 @@
         android:id="@+id/fragmentContainerView1"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="750dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
-    <Button
-        android:id="@+id/boton_cambiar_fragment"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#F4E871"
-        android:text="Ir a Acelerómetro"
-        android:textSize="16sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:src="@drawable/icons8_eye_50" />
+
+            <Button
+                android:id="@+id/boton_cambiar_fragment"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#F4E871"
+                android:text="Ir a Acelerómetro"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/anadir"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|left"
+                android:backgroundTint="#F31414"
+                android:text="Añadir"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
 
 </LinearLayout>

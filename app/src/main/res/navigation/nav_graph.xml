@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/magnetometro">
-
     <fragment
         android:id="@+id/magnetometro"
         android:name="com.example.laboratorio3_20201696.fragmentos.Magnetometro"
